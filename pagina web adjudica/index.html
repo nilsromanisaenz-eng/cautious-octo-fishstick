@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjudica Pro | Romani & Abogados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+        :root { --gold: #af945f; --dark: #121212; }
+        body { font-family: 'Montserrat', sans-serif; background-color: #ffffff; color: #333; }
+        h1, h2, h3, h4, .serif { font-family: 'Cinzel', serif; }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+                        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000');
+            background-size: cover; background-attachment: fixed;
+        }
+        .card-remate { border: 1px solid #eee; transition: all 0.4s ease; background: white; }
+        .card-remate:hover { box-shadow: 0 20px 40px rgba(0,0,0,0.05); border-color: var(--gold); transform: translateY(-5px); }
+        .btn-gold { background-color: var(--gold); color: white; letter-spacing: 2px; transition: 0.3s; }
+        .btn-gold:hover { background-color: #8e774a; }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/51939650366" class="fixed bottom-8 right-8 bg-[#25d366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-[1000] hover:scale-110 transition">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <nav class="bg-white py-6 border-b border-gray-100 sticky top-0 z-[100]">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <img src="logo.png" alt="Logo" class="h-20">
+                <div class="border-l pl-6 border-gray-200">
+                    <h1 class="text-xl font-bold tracking-[0.3em]">ADJUDICA <span class="text-[#af945f]">PRO</span></h1>
+                    <p class="text-[9px] uppercase tracking-[0.4em] text-gray-400 font-semibold mt-1">Romani & Abogados</p>
+                </div>
+            </div>
+            <div class="hidden md:flex gap-10 uppercase text-[10px] font-bold tracking-widest text-gray-500">
+                <a href="#remates" class="hover:text-gold transition">Remates Vigentes</a>
+                <a href="#especialidades" class="hover:text-gold transition">Especialidades</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-bg py-32 text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-6xl font-bold tracking-widest mb-4">EXCELENCIA JURÍDICA</h2>
+            <div class="w-16 h-[2px] bg-[#af945f] mx-auto mb-8"></div>
+            <p class="text-lg font-light text-gray-300 italic max-w-2xl mx-auto">Seguridad legal en adquisiciones de activos y gestión de remates judiciales.</p>
+        </div>
+    </section>
+
+    <section id="remates" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold uppercase tracking-widest">Cartera de Inmuebles</h3>
+                <p class="text-[#af945f] text-[10px] font-bold tracking-[0.3em] mt-2 uppercase">Oportunidades REMAJU Disponibles</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <article class="card-remate p-8">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-[9px] font-bold uppercase tracking-widest text-[#af945f] border-b border-[#af945f] pb-1">Primer Remate</span>
+                        <span class="text-[9px] font-bold text-gray-400 uppercase italic">Cierre: 29/03/2026</span>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-1 uppercase">Surco</h4>
+                    <p class="text-[10px] text-gray-400 font-semibold mb-6 uppercase tracking-widest">EXP. 22347-2026</p>
+                    <div class="space-y-3 mb-8 text-[11px] text-gray-500 font-light">
+                        <p><i class="fas fa-map-marker-alt mr-2 text-gray-300"></i> Av. Universitaria Sur 1951, Dpto 1406 - Decimo Cuarto piso</p>
+                        <p><i class="fas fa-expand-arrows-alt mr-2 text-gray-300"></i> Área: 87.64 m²</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 border-t border-gray-50 pt-6 mb-8 text-center">
+                        <div>
+                            <p class="text-[8px] uppercase font-bold text-gray-400 mb-1">Base</p>
+                            <p class="text-sm font-bold">$ 83,703.95</p>
+                        </div>
+                        <div>
+                            <p class="text-[8px] uppercase font-bold text-gray-400 mb-1">Tasación</p>
+                            <p class="text-sm font-bold">$ 125,555.92</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 text-center mb-6">
+                        <p class="text-[9px] uppercase font-bold tracking-widest text-[#af945f]">Oblaje: $ 12,555.59</p>
+                    </div>
+                    <a href="https://wa.me/51939650366?text=Interesado%20Exp%22347" class="btn-gold block w-full text-center py-4 text-[10px] font-bold uppercase shadow-lg">Analizar Viabilidad</a>
+                </article>
+
+                <article class="card-remate p-8">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-[9px] font-bold uppercase tracking-widest text-[#af945f] border-b border-[#af945f] pb-1">Segundo Remate</span>
+                        <span class="text-[9px] font-bold text-gray-400 uppercase italic">Cierre: 03/04/2026</span>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-1 uppercase">San Miguel</h4>
+                    <p class="text-[10px] text-gray-400 font-semibold mb-6 uppercase tracking-widest">EXP. 22472-2026</p>
+                    <div class="space-y-3 mb-8 text-[11px] text-gray-500 font-light">
+                        <p><i class="fas fa-map-marker-alt mr-2 text-gray-300"></i> Calle San Martin de Porres 126, Dpto 1502 - Quinto Piso</p>
+                        <p><i class="fas fa-expand-arrows-alt mr-2 text-gray-300"></i> Área: 91.98 m²</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 border-t border-gray-50 pt-6 mb-8 text-center">
+                        <div>
+                            <p class="text-[8px] uppercase font-bold text-gray-400 mb-1">Base</p>
+                            <p class="text-sm font-bold">$ 87,074.40</p>
+                        </div>
+                        <div>
+                            <p class="text-[8px] uppercase font-bold text-gray-400 mb-1">Tasación</p>
+                            <p class="text-sm font-bold">$ 130,611.60</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 text-center mb-6">
+                        <p class="text-[9px] uppercase font-bold tracking-widest text-[#af945f]">Oblaje: $ 13,061.60</p>
+                    </div>
+                    <a href="https://wa.me/51939650366?text=Interesado%20Exp%22472" class="btn-gold block w-full text-center py-4 text-[10px] font-bold uppercase shadow-lg">Analizar 
+Viabilidad</a>
+                </article>
+
+                <article class="card-remate p-8">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-[9px] font-bold uppercase tracking-widest text-[#af945f] border-b border-[#af945f] pb-1">Tercer Remate</span>
+                        <span class="text-[9px] font-bold text-gray-400 uppercase italic">Cierre: 02/04/2026</span>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-1 uppercase">Miraflores</h4>
+                    <p class="text-[10px] text-gray-400 font-semibold mb-6 uppercase tracking-widest">EXP. 21928-2026</p>
+                    <div class="space-y-3 mb-8 text-[11px] text-gray-500 font-light">
+                        <p><i class="fas fa-map-marker-alt mr-2 text-gray-300"></i> Calle Grimaldo del Solar N° 242, Dpto 905 - Noveno Piso</p>
+                        <p><i class="fas fa-expand-arrows-alt mr-2 text-gray-300"></i> Área: 99.82 m²</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 border-t border-gray-50 pt-6 mb-8 text-center">
+                        <div>
+                            <p class="text-[8px] uppercase font-bold text-gray-400 mb-1">Base</p>
+                            <p class="text-sm font-bold">$ 127,769.33</p>
+                        </div>
+                        <div>
+                            <p class="text-[8px] uppercase font-bold text-gray-400 mb-1">Tasación</p>
+                            <p class="text-sm font-bold">$ 191,654.00</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 text-center mb-6">
+                        <p class="text-[9px] uppercase font-bold tracking-widest text-[#af945f]">Oblaje: $ 19,165.40</p>
+                    </div>
+                    <a href="https://wa.me/51939650366?text=Interesado%20Exp%22472" class="btn-gold block w-full text-center py-4 text-[10px] font-bold uppercase shadow-lg">Analizar 
+Viabilidad</a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="especialidades" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                <div>
+                    <i class="fas fa-file-contract text-3xl text-[#af945f] mb-6 block"></i>
+                    <h4 class="text-lg font-bold mb-4 uppercase tracking-widest">Inmobiliario & Notarial</h4>
+                    <p class="text-xs text-gray-500 leading-loose">Gestión de escrituras públicas, minutas, bloqueos registrales e inmatriculaciones ante SUNARP.</p>
+                </div>
+                <div>
+                    <i class="fas fa-balance-scale text-3xl text-[#af945f] mb-6 block"></i>
+                    <h4 class="text-lg font-bold mb-4 uppercase tracking-widest">Civil & Sucesiones</h4>
+                    <p class="text-xs text-gray-500 leading-loose">Especialistas en procesos de desalojo, reivindicación, herencias y partición de bienes.</p>
+                </div>
+                <div>
+                    <i class="fas fa-city text-3xl text-[#af945f] mb-6 block"></i>
+                    <h4 class="text-lg font-bold mb-4 uppercase tracking-widest">Derecho Corporativo</h4>
+                    <p class="text-xs text-gray-500 leading-loose">Constitución de empresas, contratos mercantiles complejos y planeamiento legal estratégico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-50 py-16 border-t border-gray-100 text-center">
+        <h2 class="serif text-xl font-bold tracking-widest mb-2 uppercase">ADJUDICA PRO</h2>
+        <p class="text-[10px] uppercase tracking-[0.4em] text-gray-400 italic">Por Romani & Abogados | Lima, Perú</p>
+    </footer>
+
+</body>
+</html>
